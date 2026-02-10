@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The VibeChecker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orbit"></div>
+    <div class="bg-glow"></div>
+
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">The VibeChecker</div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#cases">Cases</a>
+          <a href="#oss">Open Source</a>
+        </div>
+        <a class="btn ghost" href="https://github.com/TheVibeChecker" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">AI Code Audits</p>
+          <h1>Trust the code you ship, even when it is written by AI.</h1>
+          <p class="subhead">
+            The VibeChecker unifies quality, security, and maintainability checks into a single,
+            transparent report. Run locally, in CI, or from the dashboard.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#get-started">Get Started</a>
+            <a class="btn" href="#cases">View Cases</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-stat">
+            <span>Checks</span>
+            <strong>18+</strong>
+          </div>
+          <div class="hero-stat">
+            <span>Focus</span>
+            <strong>AI Risk</strong>
+          </div>
+          <div class="hero-stat">
+            <span>Mode</span>
+            <strong>GUI + CLI</strong>
+          </div>
+          <div class="hero-code">
+            <p>python3 app.py</p>
+            <p>docker run -p 5000:5000 vibecheck</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" class="section">
+        <div class="section-title">
+          <h2>One dashboard. Every signal.</h2>
+          <p class="muted">Type safety, security, dependency risk, and readability in one place.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Types and Lint</h3>
+            <p>mypy, pyright, ruff, isort, pydocstyle.</p>
+          </article>
+          <article class="card">
+            <h3>Security and Secrets</h3>
+            <p>bandit, semgrep, detect-secrets, Snyk code.</p>
+          </article>
+          <article class="card">
+            <h3>Dependency Safety</h3>
+            <p>pip-audit, pip-check, pipdeptree, Snyk deps.</p>
+          </article>
+          <article class="card">
+            <h3>Complexity</h3>
+            <p>radon CC and maintainability indices to keep AI output readable.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cases" class="section cases">
+        <div class="section-title">
+          <h2>Real-world cases</h2>
+          <p class="muted">See how VibeChecker flags AI-generated risks.</p>
+        </div>
+        <div class="case-list">
+          <article class="case">
+            <h4>Silent security footguns</h4>
+            <p>Detects unsafe `subprocess` usage, eval patterns, and leaked keys.</p>
+          </article>
+          <article class="case">
+            <h4>Shaky dependency graphs</h4>
+            <p>Surfaces vulnerable packages and dependency conflicts before shipping.</p>
+          </article>
+          <article class="case">
+            <h4>Unreadable AI logic</h4>
+            <p>Flags high cyclomatic complexity and low maintainability scores.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="oss" class="section">
+        <div class="oss-card">
+          <div>
+            <h2>Open Source, open process.</h2>
+            <p class="muted">
+              The VibeChecker is built in the open. Contribute checks, improve the UI,
+              and help teams trust AI output.
+            </p>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/TheVibeChecker" target="_blank" rel="noreferrer">Contribute</a>
+            <a class="btn" href="#get-started">Docs</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="get-started" class="section get-started">
+        <div>
+          <h2>Get started in minutes</h2>
+          <ol>
+            <li>Clone the repo and install dependencies.</li>
+            <li>Run `python app.py` for the dashboard or `bash vibecheck.sh` for CLI.</li>
+            <li>Ship the report or integrate into CI.</li>
+          </ol>
+        </div>
+        <div class="terminal">
+          <pre>git clone https://github.com/TheVibeChecker/TheVibeChecker.github.io.git
+cd TheVibeChecker.github.io
+python app.py</pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built by the VibeChecker community. Released under MIT.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
